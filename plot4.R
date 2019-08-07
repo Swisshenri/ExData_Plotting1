@@ -16,9 +16,8 @@ labels <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 
 par(mfcol = c(2, 2), mar = c(4, 4, 2, 1), oma = c(0, 0, 2, 0))
 
-with(fdat, 
-      ## 4.1 plot
-     {
+with(fdat,      
+    {
       ## 4.1 plot
       plot(fdat$Global_active_power~fdat$comb_dateTime, type="l", ylab="Global Active Power", xlab="")
       
